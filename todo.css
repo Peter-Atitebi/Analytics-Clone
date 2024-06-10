@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: bisque;
+  max-width: 90%;
+  border: blue solid 1px;
+  border-radius: 5px;
+  box-shadow: 1px 1px rgb(2, 2, 31);
+}
+
+h1 {
+  margin: 25px;
+}
+
+#todo {
+  width: 70%;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px;
+}
+
+#add {
+  padding: 9px 25px;
+  color: rgb(3, 3, 65);
+  background: rgb(177, 131, 221);
+  border: 0.5px solid blueviolet;
+  border-radius: 80px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+#add:hover,
+.actions button:hover {
+  color: rgb(235, 227, 241);
+  background: rgb(16, 16, 172);
+  border: 0.5px solid rgb(16, 16, 172);
+}
+
+#add:active,
+.actions button:active {
+  background: linear-gradient(
+    to bottom right,
+    rgb(151, 31, 31),
+    blue,
+    rgb(7, 51, 7)
+  );
+  color: rgb(255, 255, 255);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.one,
+.two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.actions button {
+  padding: 9px;
+  color: rgb(3, 3, 65);
+  background: rgb(177, 131, 221);
+  border: 0.5px solid blueviolet;
+  border-radius: 50px;
+}
+
+.one button,
+.two button {
+  margin: 0 5px;
+}
+
+#disp {
+  max-height: 75px;
+  overflow-y: scroll;
+  background: lightsalmon;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: rgb(38, 0, 255);
+  border: inset 2px blue;
+}
