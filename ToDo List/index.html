@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>ToDo List</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Todo App</h1>
+
+      <div id="showerr"></div>
+
+
+      <input type="text" id="todo" autofocus />
+
+      <button id="add" onclick="submitTodo()">Add</button>
+
+
+      <div class="actions">
+        <div class="one">
+          <button onclick="unshiftShit()">Add to Start</button>
+          <button onclick="shiftShit()">Delete First</button>
+          <button onclick="popShit()">Delete Last</button>
+        </div>
+        <div class="two">
+          <button onclick="delAny()">Delete Any</button>
+          <button onclick="editAny()">Edit Any</button>
+          <button onclick="delAll()">Delete All</button>
+        </div>
+      </div>
+
+      <div id="disp" >
+        <p>No Items Yet</p>
+      </div>
+
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
